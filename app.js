@@ -14,7 +14,7 @@ var exposeRequire = require('browser-require');
 
 var appViews = [
     path.join(__dirname, '/app/views'),
-    path.join(__dirname, '/node_modules/dvla-internal-elements/vendor/assets/layouts'),
+    path.join(__dirname, '/node_modules/dvla-internal-frontend-toolkit/vendor/assets/layouts'),
 ]
 
 nunjucks.configure(appViews, {
