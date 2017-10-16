@@ -1,25 +1,12 @@
-<html>
-
-<head>
-    <link rel="stylesheet" href="/public/stylesheets/application.css" />
-</head>
-
-<body>
-    <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
-        <div id="header-wrapper">
-            <div id="header-contents">
-                <div id="header-float-left">
-                    <div id="header-logo">
-                        <a href="/" title="Home" id="logo" class="content">
-                            <div id="coat-of-arms" alt=""></div>
-                            <div class="name">DVLA</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="global-header-bar"></div>
-    </header>
-</body>
-
-</html>
+{% extends 'layout-fixed.html' %}
+{% block head %} 
+<link rel="stylesheet" href="/public/stylesheets/application.css" /> 
+<script type="text/javascript" src="/public/javascripts/application.js"></script>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-12">
+    hello
+    </div>
+</div>
+{% endblock %}
