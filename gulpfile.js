@@ -7,7 +7,7 @@ const runsequence = require('run-sequence')
 const base64 = require('gulp-base64')
 const nodemon = require('gulp-nodemon')
 
-const elementsDir = 'node_modules/dvla-internal-elements/';
+const elementsDir = 'node_modules/dvla-internal-frontend-toolkit/';
 
 gulp.task('run-dvla-gulp', () => {
     return gulp.src(`${elementsDir}gulpfile.js`)

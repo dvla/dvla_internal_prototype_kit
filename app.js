@@ -4,7 +4,6 @@ var routes = require('./app/routes.js')
 var path = require('path');
 var app = express();
 var port = (process.env.PORT || 3000);
-var exposeRequire = require('browser-require');
 
 // The following line "app.use(..." is what you want to add to your project
 // Make sure the browser-require middleware comes before staticProvider middleware
@@ -14,7 +13,7 @@ var exposeRequire = require('browser-require');
 
 var appViews = [
     path.join(__dirname, '/app/views'),
-    path.join(__dirname, '/node_modules/dvla-internal-elements/vendor/assets/layouts'),
+    path.join(__dirname, '/node_modules/dvla-internal-frontend-toolkit/vendor/assets/layouts'),
 ]
 
 nunjucks.configure(appViews, {

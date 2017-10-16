@@ -20,7 +20,6 @@
   "dependencies": {
     "dvla-internal-frontend-toolkit": "^0.2.2",
     "express": "^4.16.2",
-    "i": "^0.3.6",
     "npm": "^5.5.1",
     "nunjucks": "^3.0.1"
   },
