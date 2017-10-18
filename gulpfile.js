@@ -50,10 +50,10 @@ gulp.task('styles', () => {
     return gulp.src('app/assets/stylesheets/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
-            includePaths: [`${elementsDir}vendor/assets/stylesheets`]
+            includePaths: [`${elementsDir}app/assets/stylesheets`]
         }).on('error', sass.logError))
         .pipe(base64({
-            baseDir: `${elementsDir}vendor/assets`,
+            baseDir: `${elementsDir}app/assets`,
             extensions: ['svg', 'png', 'woff'],
             maxImageSize: 200 * (1024 * 1024),
             debug: true
