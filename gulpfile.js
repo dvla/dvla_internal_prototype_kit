@@ -21,7 +21,7 @@ gulp.task('copy-styles', () => {
 
 
 gulp.task('clean', () => {
-    del('public');
+    return del('public');
 })
 
 gulp.task('default', () => {
