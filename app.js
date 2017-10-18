@@ -13,7 +13,7 @@ var port = (process.env.PORT || 3000);
 
 var appViews = [
     path.join(__dirname, '/app/views'),
-    path.join(__dirname, '/node_modules/dvla-internal-frontend-toolkit/vendor/assets/layouts'),
+    path.join(__dirname, '/node_modules/dvla-internal-frontend-toolkit/app/views'),
 ]
 
 nunjucks.configure(appViews, {
