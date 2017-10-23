@@ -1,12 +1,12 @@
 {% extends 'layout-fixed.html' %}
 {% block head %} 
-<link rel="stylesheet" href="/public/stylesheets/application.css" /> 
-<script type="text/javascript" src="/public/javascripts/application.js"></script>
+    {% include 'includes/head.html' %}
 {% endblock %}
 {% block content %}
 <div class="row">
     <div class="col-12">
-    hello
+        <h1>DVLA Internal Prototyping Kit</h1>
+        <p>For more information on how to use the kit, visit <a href="https://dvla-internal-frontend-toolkit.herokuapp.com/">https://dvla-internal-frontend-toolkit.herokuapp.com/</a>.</p>
     </div>
 </div>
 {% endblock %}
