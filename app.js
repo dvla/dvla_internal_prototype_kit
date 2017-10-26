@@ -13,6 +13,7 @@ var port = (process.env.PORT || 3000);
 
 var appViews = [
     path.join(__dirname, '/app/views'),
+    path.join(__dirname, '/app/macros'),
     path.join(__dirname, '/node_modules/dvla-internal-frontend-toolkit/app/views'),
     path.join(__dirname, '/node_modules/dvla-internal-frontend-toolkit/app/views/layouts/nunjucks'),
 ]

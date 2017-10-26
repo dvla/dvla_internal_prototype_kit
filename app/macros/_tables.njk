@@ -1,0 +1,36 @@
+{% macro basicTable(headers, keys, data) %}
+<table>
+    <thead>
+        {% for header in headers %}
+            <th>{{ header }}</th>
+        {% endfor %}
+    </thead>
+    <tbody>
+        {% for item in data %}
+            <tr>
+                {% for key in keys %}
+                    <td>{{item[key]}}</td>        
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endmacro %}
+
+{% macro tachoTable(data) %}
+<table class="tachonet-queue">
+    <thead>        
+        <th class="transaction-type">Transaction type</th>
+        <th class="tacho-number">Tacho number</th>
+        <th class="date">Date received</th>
+        <th class="status">Days old<br /> (calendar)</th>
+    </thead>
+    <tbody>
+        {% for item in data %}
+            <tr>
+                {}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endmacro %}
