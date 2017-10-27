@@ -19,6 +19,15 @@ gulp.task('copy-styles', () => {
         .pipe(gulp.dest('app/assets/stylesheets/'))
 })
 
+gulp.task('copy-tick-of-truth', () => {
+    return gulp.src('node_modules/tick-of-truth/tick-of-truth.js')
+    .pipe(gulp.dest('public/javascripts/'));
+})
+
+gulp.task('copy-member', () => {
+    return gulp.src('node_modules/member.js/member.js')
+    .pipe(gulp.dest('public/javascripts/'));
+})
 
 gulp.task('clean', () => {
     return del('public');
@@ -73,7 +82,7 @@ gulp.task('images', () => {
 })
 
 gulp.task('build', cb => {
-    runsequence('clean', ['styles', 'images', 'scripts'], cb)
+    runsequence('clean', ['copy-member','copy-tick-of-truth','styles', 'images', 'scripts'], cb)
 })
 
 gulp.task('server', () => {
