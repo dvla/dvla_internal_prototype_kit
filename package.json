@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/liam-betsworth/dvla_internal_prototype_kit#readme",
   "dependencies": {
-    "dvla-internal-frontend-toolkit": "^0.3.4",
+    "dvla-internal-frontend-toolkit": "^1.0.1",
     "express": "^4.16.2",
     "member.js": "^1.0.0",
     "npm": "^5.5.1",

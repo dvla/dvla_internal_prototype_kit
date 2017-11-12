@@ -14,10 +14,10 @@ gulp.task('run-dvla-gulp', () => {
         .pipe(chug())
 });
 
-gulp.task('copy-styles', () => {
-    return gulp.src(`${elementsDir}vendor/assets/stylesheets/*.*`)
-        .pipe(gulp.dest('app/assets/stylesheets/'))
-})
+// gulp.task('copy-styles', () => {
+//     return gulp.src(`${elementsDir}vendor/assets/stylesheets/*.*`)
+//         .pipe(gulp.dest('app/assets/stylesheets/'))
+// })
 
 gulp.task('copy-tick-of-truth', () => {
     return gulp.src('node_modules/tick-of-truth/tick-of-truth.js')
@@ -61,13 +61,6 @@ gulp.task('styles', () => {
         .pipe(sass({
             includePaths: [`${elementsDir}app/assets/stylesheets`]
         }).on('error', sass.logError))
-        .pipe(base64({
-            baseDir: `${elementsDir}app/assets`,
-            extensions: ['svg', 'png', 'woff'],
-            maxImageSize: 200 * (1024 * 1024),
-            debug: true
-        }))
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest('public/stylesheets/'))
 })
 
@@ -77,12 +70,17 @@ gulp.task('scripts', () => {
 })
 
 gulp.task('images', () => {
-    return gulp.src('app/assets/images/**/*')
+    return gulp.src(['app/assets/images/**/*', `${elementsDir}app/assets/images/**/*`])
         .pipe(gulp.dest('public/images/'))
 })
 
+gulp.task('fonts', () => {
+    return gulp.src(`${elementsDir}app/assets/fonts/**/*`)
+        .pipe(gulp.dest('public/fonts/'))
+})
+
 gulp.task('build', cb => {
-    runsequence('clean', ['copy-member','copy-tick-of-truth','styles', 'images', 'scripts'], cb)
+    runsequence('clean', ['copy-member', 'copy-tick-of-truth', 'styles', 'images', 'fonts', 'scripts'], cb)
 })
 
 gulp.task('server', () => {
