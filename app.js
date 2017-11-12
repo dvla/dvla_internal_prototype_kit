@@ -3,7 +3,7 @@ var nunjucks = require('nunjucks');
 var routes = require('./app/routes.js')
 var path = require('path');
 var app = express();
-var port = (process.env.PORT || 3000);
+var port = (process.env.PORT || 4444);
 
 // The following line "app.use(..." is what you want to add to your project
 // Make sure the browser-require middleware comes before staticProvider middleware
@@ -68,6 +68,6 @@ app.get(/^\/([^.]+)$/, function (req, res) {
 });
 
 
-app.listen(3000, () => {
-    console.log('Listening on port', port);
+app.listen(port, () => {
+    console.log('Listening on port ' + port + '   url: http://localhost:' + port);
 });  
