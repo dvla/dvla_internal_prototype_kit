@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines": {
+    "node": ">=7.4.0 <9.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp develop"
@@ -23,15 +26,13 @@
     "member.js": "^1.0.0",
     "npm": "^5.5.1",
     "nunjucks": "^3.0.1",
-    "tick-of-truth": "^1.0.0"
+    "tick-of-truth": "^1.0.0",
+    "timmy.js": "^1.0.0"
   },
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-base64": "^0.1.3",
-    "gulp-chug": "^0.5.1",
     "gulp-nodemon": "^2.2.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sass": "^3.1.0"
   }
 }
