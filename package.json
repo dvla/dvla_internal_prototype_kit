@@ -1,6 +1,6 @@
 {
   "name": "dvla_internal_prototype_kit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "app.js",
   "engines": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/liam-betsworth/dvla_internal_prototype_kit#readme",
   "dependencies": {
-    "dvla-internal-frontend-toolkit": "^1.0.1",
+    "dvla-internal-frontend-toolkit": "^2.0.0",
     "express": "^4.16.2",
     "member.js": "^1.0.0",
     "npm": "^5.5.1",
