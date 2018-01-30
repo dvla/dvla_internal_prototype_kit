@@ -21,12 +21,12 @@
   },
   "homepage": "https://github.com/liam-betsworth/dvla_internal_prototype_kit#readme",
   "dependencies": {
-    "dvla-internal-frontend-toolkit": "^2.0.0",
+    "dvla-internal-frontend-toolkit": "^2.1.15",
     "express": "^4.16.2",
     "member.js": "^1.0.0",
-    "npm": "^5.5.1",
+    "npm": "^5.6.0",
     "nunjucks": "^3.0.1",
-    "tick-of-truth": "^1.0.0",
+    "tick-of-truth": "^1.0.8",
     "timmy.js": "^1.0.0"
   },
   "devDependencies": {
